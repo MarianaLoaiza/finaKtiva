@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finaKtiva</title>
+    <link rel="icon" href="./img/logo.icon">
+    <link rel="stylesheet" href="style.css/style.css">
+    <link rel="stylesheet" href="style.css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <main>
+         <!-- nav -->
+            <header>
+                <nav class="nav">
+                    <ul class="list">
+                        <li class="list__item"><img src="./img/logo.PNG"
+                        class="list__item--logo"
+                            width="200px"
+                            height="120px"
+                            alt="Logo"></li>
+                            <li class="list__item--home"><p>Home</p></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <!-- hero -->
+           <section >
+               <div class="hero">
+                   <img src="./img/hero.PNG" 
+                   class="hero__img"
+                   alt="">
+               </div>
+           </section>
+
+        <!-- description -->
+           <section>
+               <div class="description">
+                   <h1 class="description__title">¡Juguemos con los números!</h1>
+                   <img src="./img/numeros.jpg" 
+                   alt="" 
+                   class="description__img">
+                   <h2 class="description__subTitle">Descripción</h2>
+                
+               
+                     <div class="discription-info">
+                         <p class="description-info__text">Jugando con los números consiste en digitar un numero cualquiera, a medida que vamos ingresando los números vamos a  tener una lista de ellos, con la cual se puede realizar diferentes operaciones:
+                            <br>
+                            <br>
+                            * Ordenar los números de mayor a menor.
+                            <br>
+                            <br>
+                            *Ordenar de menor a mayor.
+                            <br>
+                            <br>
+                            *Sumar todos los números de la lista.
+                            <br>
+                            <br>
+                            *Multiplicar cada numero por si mismo.</p>
+                     </div>
+                 
+               </div>
+           </section>
+        
+        <!-- required -->
+           <section>
+              <div class="required">    
+                <h2 class="required__subTitle">Requisitos</h2>
+                <div class="required-text">
+                    <p >Es importante que tenga en cuenta los siguientes aspectos:
+                        <br>
+                        <br>
+                        *Al momento de digitar el valor, solo se aceptaron valores que contengan números
+                        <br>
+                        <br>
+                        *No se permiten letras o caracteres especiales como +,*_ entre otros.
+                        <br>
+                        <br>
+                        * La casilla la cual dice seleccionar, es obligatorio que este seleccionada una de las opciones. <br></p> 
+    
+                </div>
+                    <img src="./img/requisitos.jpg"  alt="" class="required__img">     
+               </div>
+                  
+            </section>
+
+        <!--  Enter number-->
+            <section>
+              <div class="enter-num"> 
+                <h2 class="enter-num__formSubtitle">Comencemos.</h2>
+
+                   <div class="form">
+                    <form action="form" class="form" id="form">
+                        <label for="section" class="form__label">Ingrese el número <span>*</span></label>
+                        <input type="number" id="number" type="reset">
+                    
+                        <select name="section" id="section">
+                        <option value="0">-- Seleciconar --</option>
+                        <option value="1" >Ordenar de mayor a  menor</option>
+                        <option value="2" >Ordenar de menor a mayor</option>
+                        <option value="3">sumar todos</option>
+                        <option value="4">multiplicar cada numero por si mismo</option>
+                        </select>
+                        <button id="btn" class="form__botton--yelow" type="submit">Enviar</button>             
+                       </div>
+                      
+                    </form>
+                    <p class="enter-num__list">Mi lista de numeros es:</p>
+                    <ul class="enter-num__listItem" id="myListNumber"></ul>
+                    <button id="clear" class="form__botton--red">Limpiar</button>
+                <div>      
+            </section>
+
+        <!-- number list -->
+            <section>
+                <div class="operations" >
+                   <div class="operations--menMayor " >
+                    <h2 class="operations__subTitle">* Organizados de menor a mayor</h2>
+                    <li class="operations__textList" id="menorMayor"></li>
+                   </div>
+                   <div class="operations--mayMen">
+                    <h2 class="operations__subTitle">* Organizados de  mayor a menor</h2>
+                    <li class="operations__textList"  id="mayorMenor"></li>
+                   </div>
+                   <div class="operations--sumar">
+                    <h2 class="operations__subTitle">* Suma de todos mis números </h2>
+                    <li class="operations__textList"  id="sumar"></li>
+                   </div>  
+                   <div class="operations--multiplicar">
+                    <h2 class="operations__subTitle">* Multiplicacion por si mismo</h2>
+                    <li class="operations__textList"  id="multiplicar"></li>
+                   </div>
+                </div>
+              
+            </section>
+        
+        <!-- footer -->
+            <section >
+              <div class=" footer">
+                <div class="footer--name">  
+                    <p >finaKtiva</p>
+                    <hr class="footer__hr">
+                 </div>
+                 <div class="footer-info">
+                     <p class="footer-info__tel">Teléfono:</p>
+                     <a href="tel:0436051193">+57 (4) 605 11 93</a>
+                     <p class="footer-info__tel">Medellín</p>
+                     <a href="tel:0343905601">+57 (1) 390 56 01  - Bogotá</a>
+                     <p class="footer-info__tel"><a href="tel:0344864650">+57 (2) 486 46 50  - Cali</a></p>
+                     <a href="tel:+57 300 516 65 72">+57 300 516 65 72</a>   
+                     <p class="footer-info__direction">Dirección:</p>  
+                     <p class="footer-info__direction"> Carrera 43 B # 1ª Sur – 70, Piso 10:</p>
+                     <p class="footer-info__direction"> Edificio Buró 4.0 - Medellín</p>
+                     <p class="footer-info__email">Email:</p> 
+                    <a href="mailto:contacto@finaktiva.com"><p class="footer-info__email">contacto@finaktiva.com</p></a>
+                 </div>
+                 <div class="footer-aliados">
+                     <p>Hacemos parte de:</p>
+                     <img src="./img/b.png" alt="" class="footer-aliados__img">
+                     <img src="./img/fedesoft.png" alt="" class="footer-aliados__img">
+                     <img src="./img/andi.png" alt="" class="footer-aliados__img">
+                     <img src="./img/fintech.png" alt=""
+                     class="footer-aliados__img">
+                 </div>
+                 <div class="footer-social">
+                     <p>Síguenos</p>
+                    <a href="https://www.facebook.com/finaktiva/" target="blank"><img src="./img/facebook.png" alt="" class="footer-social__img"></a>
+                     <a href="https://www.instagram.com/finaktiva/"><img src="./img/instagram.png" alt="" class="footer-social__img"></a>
+                     <a href="https://www.youtube.com/channel/UCBmF9y7DuAKJH3Ttbh6u7xA" target="blank"><img src="./img/youtube.jpg" alt="" class="footer-social__img"></a>
+                     <a href="https://twitter.com/finaktiva"><img src="./img/tuwietr.png" alt="" class="footer-social__img"></a>
+               </div>
+               
+                 <div class="footer-byFor">
+                     <p class="footer-byFor__text">Hecho con ♥ por:  <img src="./img/mariana.png" alt="" class="footer-byFor__img"> arianaLoaiza</p></div>
+                     
+                     <div class="footer-byFor--yelow" >
+                         <img src="./img/burbuja.png" alt="" class="footer-byFor__img--burbuja">
+                     </div>
+                 
+                 </div>
+              </div>
+            </section>
+    </main>
+<script src="./js/index.js"></script>
+</body>
+</html>
+
